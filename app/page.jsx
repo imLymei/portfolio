@@ -37,6 +37,15 @@ export default function Home() {
             <h2>Deploy &rarr;</h2>
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
           </a>
+
+          <a
+            href="./portfolio"
+            rel="noopener noreferrer"
+            className={styles.card}
+          >
+            <h2>Portfolio &rarr;</h2>
+            <p>Page for my portfolio so i can wrote my code in another place. You're welcome :)</p>
+          </a>
         </div>
       </main>
 
