@@ -10,8 +10,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <Header />
-        <div className='h-px bg-green-400 w-full'></div>
+      <Header />
         {children}
       </body>
     </html>
