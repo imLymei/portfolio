@@ -39,7 +39,8 @@ export default function Home() {
           </a>
 
           <a
-            href="./portfolio"
+            href="https://github.com/imLymei"
+            target='_blank'
             rel="noopener noreferrer"
             className={styles.card}
           >
