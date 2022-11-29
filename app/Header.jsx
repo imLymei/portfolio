@@ -9,10 +9,10 @@ function Header() {
               <Link href="/" className='hover:text-green-400 cursor-pointer'>HOME</Link>
           </div>
           <div className='w-32 p-3'>
-              <Link href="./portfolio" className='hover:text-green-400 cursor-pointer'>PORTFOLIO</Link>
+              <Link href="/portfolio" className='hover:text-green-400 cursor-pointer'>PORTFOLIO</Link>
           </div>
           <div className='w-32 p-3'>
-              <Link href="./project" className='hover:text-green-400 cursor-pointer'>PROJECTS</Link>
+              <Link href="/" className='hover:text-green-400 cursor-pointer'>PROJECTS</Link>
           </div>
       </header>
       <div className='fixed h-[53px] bg-black border-b-[1px] border-green-400 w-full z-[9]' />
