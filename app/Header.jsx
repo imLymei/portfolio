@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className='flex justify-center'>
-      <div className='w-full max-w-[85vw] grid grid-cols-3 items-center p-10 fixed'>
+      <div className='w-full max-w-[85vw] grid grid-cols-3 items-center gap-2 px-0 py-3 sm:p-10 fixed'>
         <div className='relative'>
         <h1 className='headerText relative left-2 bottom-[-0.4rem]'>Felipe</h1>
         <h1 className='headerText relative left-[2.7rem] bottom-[0.4rem]'>Cardoso</h1>

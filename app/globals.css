@@ -13,7 +13,7 @@
 
 @layer components {
   .headerText {
-    @apply text-[#36f1cd] text-4xl font-bold;
+    @apply text-[#36f1cd] text-2xl sm:text-4xl font-bold;
     
     -webkit-user-select: none;
     -moz-user-select: none;
