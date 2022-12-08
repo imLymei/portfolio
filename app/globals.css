@@ -13,7 +13,7 @@
 
 @layer components {
   .headerText {
-    @apply text-[#36f1cd] text-3xl sm:text-4xl font-bold;
+    @apply text-[#36f1cd] text-3xl sm:text-4xl font-bold relative;
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -22,5 +22,10 @@
   }
   .headerIcon {
     @apply h-8 w-8 text-[#36f1cd];
+  }
+
+  .arrow-middle {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
