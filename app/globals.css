@@ -7,27 +7,20 @@
   src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .headerText {
+    @apply text-[#36f1cd] text-4xl font-bold;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
-  body {
-    color: white;
-    background: black;
+  .headerIcon {
+    @apply h-8 w-8 text-[#36f1cd];
   }
 }
