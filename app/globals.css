@@ -22,7 +22,7 @@
   }
 
   .header-link {
-    @apply text-[#f8f8f8] text-xl font-bold relative hover:text-[#36f1cd];
+    @apply text-[#f8f8f8] text-base font-bold relative hover:text-[#36f1cd];
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -31,7 +31,7 @@
   }
 
   .header-link-mobile {
-    @apply text-[#f8f8f8] text-4xl font-bold relative hover:text-[#36f1cd];
+    @apply text-[#f8f8f8] text-3xl font-bold relative hover:text-[#36f1cd];
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -45,6 +45,26 @@
 
   .arrow-middle {
     left: 50%;
-    transform: translateX(-50%);
+    transform-origin: center;
+    animation: opacityglow 3s cubic-bezier(.5, 0, .5, 1) infinite;
+  }
+
+  .bg-noise {
+    background-image: url('https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif');
+  }
+}
+
+@keyframes opacityglow {
+  0% {
+    opacity: 0.5;
+    transform: translate(-50%) scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%) scale(1.04);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%) scale(0.96);
   }
 }
