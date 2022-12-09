@@ -9,6 +9,15 @@
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  @supports(overflow: overlay) {
+    body{
+      overflow: overlay;
+    }
+  }
 }
 
 @layer components {
@@ -67,4 +76,19 @@
     opacity: 0.5;
     transform: translate(-50%) scale(0.96);
   }
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(50, 50, 50, 0.5);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.5);
 }
