@@ -2,95 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'RALEWAY';
-  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-@media (min-width: 640px) {
-  @supports(overflow: overlay) {
-    body{
-      overflow: auto;
-      overflow-x: hidden;
-      overflow-y: overlay;
-    }
-  }
-}
-
-@layer components {
-  .header-text {
-    @apply text-[#36f1cd] text-3xl sm:text-4xl font-bold relative;
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .header-link {
-    @apply text-[#f8f8f8] text-base font-bold relative hover:text-[#36f1cd];
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .header-link-mobile {
-    @apply text-[#f8f8f8] text-3xl font-bold relative hover:text-[#36f1cd];
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .headerIcon {
-    @apply h-8 w-8 text-[#36f1cd];
-  }
-
-  .arrow-middle {
-    left: 50%;
-    transform-origin: center;
-    animation: opacityglow 3s cubic-bezier(.5, 0, .5, 1) infinite;
-  }
-
-  .bg-noise {
-    background-image: url('https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif');
-  }
-}
-
-@keyframes opacityglow {
-  0% {
-    opacity: 0.5;
-    transform: translate(-50%) scale(0.96);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%) scale(1.04);
-  }
-  100% {
-    opacity: 0.5;
-    transform: translate(-50%) scale(0.96);
-  }
-}
-
-::-webkit-scrollbar {
-  background: transparent;
-  width: 10px;;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(50, 50, 50, 0.5);
-  border-radius: 5px;
-  z-index: 10;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 100, 100, 0.5);
+html,
+body {
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
 }
