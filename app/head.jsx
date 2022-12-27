@@ -20,7 +20,7 @@ export default function Head() {
 				property='og:description'
 			/>
 			<meta
-				content='https://cdn.discordapp.com/attachments/457992163670753301/1050617286949617714/image.png'
+				content='https://cdn.discordapp.com/attachments/457992163670753301/1057438765481730118/image.png'
 				property='og:image'></meta>
 
 			<meta
@@ -30,7 +30,7 @@ export default function Head() {
 				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista'
 				property='twitter:description'></meta>
 			<meta
-				content='https://cdn.discordapp.com/attachments/457992163670753301/1050617286949617714/image.png'
+				content='https://cdn.discordapp.com/attachments/457992163670753301/1057438765481730118/image.png'
 				property='twitter:image'></meta>
 			<meta content='summary_large_image' name='twitter:card'></meta>
 
