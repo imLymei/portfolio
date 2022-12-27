@@ -213,12 +213,12 @@ export default function Home() {
 							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
 								<a
 									className='cursor-pointer'
-									href=''
+									href='https://physic-engine.vercel.app'
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://github.com/imLymei/captur-proj/raw/main/public/print1.png'
-										alt='Captur Portfolio'
+										src='https://cdn.discordapp.com/attachments/457992163670753301/1057434786983059496/de64601d-592f-462a-bf0f-ac0af20058c6.png'
+										alt='Physic engine'
 										fill={true}
 									/>
 								</a>
@@ -226,12 +226,12 @@ export default function Home() {
 							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
 								<a
 									className='cursor-pointer'
-									href=''
+									href='https://kariba-eight.vercel.app/'
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://github.com/imLymei/captur-proj/raw/main/public/print1.png'
-										alt='Captur Portfolio'
+										src='https://cdn.discordapp.com/attachments/457992163670753301/1057436940342935643/6d0d1fc6-a299-4d27-8e45-3b7fc1c03c1b.png'
+										alt='Projeto de Probabilidade Kariba'
 										fill={true}
 									/>
 								</a>
@@ -239,12 +239,12 @@ export default function Home() {
 							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
 								<a
 									className='cursor-pointer'
-									href=''
+									href='https://github.com/imLymei/chatgpt-clone'
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://github.com/imLymei/captur-proj/raw/main/public/print1.png'
-										alt='Captur Portfolio'
+										src='https://cdn.discordapp.com/attachments/1033477432851836959/1057047734684753990/image.png'
+										alt='Chatgpt Clone'
 										fill={true}
 									/>
 								</a>
