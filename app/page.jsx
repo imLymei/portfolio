@@ -56,7 +56,7 @@ export default function Home() {
 								href='https://www.unisanta.br'
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Universidade Santa Cecília
 							</a>{' '}
 							do curso{' '}
@@ -64,7 +64,7 @@ export default function Home() {
 								href='https://conteudo.unisanta.br/landing-page-tecnologo-analise-e-desenvolvimento-de-sistemas '
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Análise e Desenvolvimento de Sistemas
 							</a>
 							, com foco em{' '}
@@ -166,7 +166,7 @@ export default function Home() {
 								href='https://nextjs.org'
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Next.js
 							</a>{' '}
 							ou alguns programas utilizando{' '}
@@ -174,7 +174,7 @@ export default function Home() {
 								href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Javascript
 							</a>{' '}
 							ou{' '}
@@ -182,7 +182,7 @@ export default function Home() {
 								href='https://www.python.org'
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Python
 							</a>
 							. Acesse meu{' '}
@@ -190,14 +190,14 @@ export default function Home() {
 								href='https://github.com/imLymei'
 								target='_blank'
 								rel='noreferrer'
-								className='text-indigo-700'>
+								className='text-indigo-700 dark:text-indigo-500'>
 								Github
 							</a>{' '}
 							caso queira ver{' '}
 							<span className='text-pink-500'>todos os meus projetos</span>.
 						</p>
 						<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-4'>
-							<div className='relative min-w-[160px] min-h-[90px] w-[20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
+							<div className='relative min-w-[160px] min-h-[90px] w-[20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://captur-one.vercel.app'
@@ -210,7 +210,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
+							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://physic-engine.vercel.app'
@@ -223,7 +223,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
+							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://kariba-eight.vercel.app/'
@@ -236,7 +236,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm'>
+							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://github.com/imLymei/chatgpt-clone'
