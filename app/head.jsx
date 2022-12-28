@@ -21,10 +21,7 @@ export default function Head() {
 				property='description'
 			/>
 
-			<meta
-				content='Full Stack Developer | Felipe Cardoso'
-				property='og:title'
-			/>
+			<meta content='Full Stack Developer | Felipe Cardoso' property='og:title' />
 			<meta
 				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
 				property='og:description'
@@ -33,9 +30,7 @@ export default function Head() {
 				content='https://cdn.discordapp.com/attachments/457992163670753301/1057438765481730118/image.png'
 				property='og:image'></meta>
 
-			<meta
-				content='Full Stack Developer | Felipe Cardoso'
-				property='twitter:title'></meta>
+			<meta content='Full Stack Developer | Felipe Cardoso' property='twitter:title'></meta>
 			<meta
 				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
 				property='twitter:description'></meta>
