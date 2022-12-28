@@ -18,10 +18,10 @@ import Astronaut2 from '../public/astronaut.webp';
 import { useState } from 'react';
 
 export default function Home() {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 
 	return (
-		<div className={darkMode ? 'bg-black dark text-white' : 'bg-white'}>
+		<div className={darkMode ? 'bg-black text-white' : ' bg-white'}>
 			<main className='px-10'>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
@@ -81,13 +81,13 @@ export default function Home() {
 							href='https://www.linkedin.com/in/imlymei/'
 							rel='noreferrer'
 							target={'_blank'}>
-							<AiFillLinkedin />
+							<AiFillLinkedin className='hover:scale-110 transition-all' />
 						</a>
 						<a
 							href='https://github.com/imLymei'
 							rel='noreferrer'
 							target={'_blank'}>
-							<AiFillGithub />
+							<AiFillGithub className='hover:scale-110 transition-all' />
 						</a>
 					</div>
 					<div className='relative left-[-15%] sm:left-[-10%] h-[30vw] sm:h-[20vw] w-[60vw] sm:w-[45vw] my-10'>
