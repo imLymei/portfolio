@@ -21,7 +21,7 @@ export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
 
 	return (
-		<div className={darkMode ? 'bg-black text-white' : ' bg-white'}>
+		<div className={darkMode ? 'bg-black text-white  dark' : ' bg-white '}>
 			<main className='px-10'>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
@@ -97,7 +97,7 @@ export default function Home() {
 				<section className='relative text-center min-h-screen'>
 					<h1 className='text-3xl py-16'>Skill Set</h1>
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
-						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border dark:border-white border-black rounded-sm'>
+						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm'>
 							<h2 className='text-2xl py-2'>Linguagens</h2>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[6%]'>
 								<a
@@ -253,7 +253,7 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-			<footer className='p-8 text-center border-t dark:bg-black border-black dark:border-white grid grid-cols-2'>
+			<footer className='p-8 px-[10vw] x820:px-[25vw] text-center border-t dark:bg-black border-black dark:border-white grid grid-cols-2'>
 				<h1 className='text-sm dark:text-white'>Felipe Cardoso©2022</h1>
 				<h1 className='text-sm dark:text-white'>
 					Powered by <a href=''>Next.js</a>
