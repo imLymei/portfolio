@@ -48,8 +48,8 @@ export default function Home() {
 						</ul>
 					</nav>
 					<div className='text-center py-10 sm:p-10'>
-						<h2 className='text-7xl sm:text-8xl py-2'>FELIPE CARDOSO</h2>
-						<h3 className='text-3xl py-2'>Fullstack developer e programador</h3>
+						<h1 className='text-7xl sm:text-8xl py-2'>FELIPE CARDOSO</h1>
+						<h2 className='text-3xl py-2'>Fullstack developer e programador</h2>
 						<p className='py-6 leading-8 sm:px-16 lg:px-40'>
 							Estudante de programação na faculdade{' '}
 							<a
@@ -95,10 +95,10 @@ export default function Home() {
 					</div>
 				</section>
 				<section className='relative text-center min-h-screen'>
-					<h1 className='text-3xl py-16'>Skill Set</h1>
+					<h2 className='text-3xl py-16'>Skill Set</h2>
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
 						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm'>
-							<h2 className='text-2xl py-2'>Linguagens</h2>
+							<h3 className='text-2xl py-2'>Linguagens</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[6%]'>
 								<a
 									href='https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
@@ -127,7 +127,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border dark:border-white border-black rounded-sm'>
-							<h2 className='text-2xl py-2'>Frameworks/Library</h2>
+							<h3 className='text-2xl py-2'>Frameworks/Library</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
 									<SiReact className='hover:scale-110 transition-all' />
@@ -254,10 +254,10 @@ export default function Home() {
 				</section>
 			</main>
 			<footer className='p-8 px-[10vw] x820:px-[25vw] text-center border-t dark:bg-black border-black dark:border-white grid grid-cols-2'>
-				<h1 className='text-sm dark:text-white'>Felipe Cardoso©2022</h1>
-				<h1 className='text-sm dark:text-white'>
+				<h2 className='text-sm dark:text-white'>Felipe Cardoso©2022</h2>
+				<h2 className='text-sm dark:text-white'>
 					Powered by <a href=''>Next.js</a>
-				</h1>
+				</h2>
 			</footer>
 		</div>
 	);
