@@ -1,21 +1,13 @@
 'use client';
 
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
-import { IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io';
-import {
-	SiNextdotjs,
-	SiReact,
-	SiTailwindcss,
-	SiNodedotjs,
-	SiFigma,
-} from 'react-icons/si';
-import { GiRingedPlanet } from 'react-icons/gi';
 import Image from 'next/image';
-
-import Resume from '../public/Resume.pdf';
-import Astronaut2 from '../public/astronaut.webp';
 import { useState } from 'react';
+import { AiFillGithub, AiFillHtml5, AiFillLinkedin } from 'react-icons/ai';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { GiRingedPlanet } from 'react-icons/gi';
+import { IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io';
+import { SiFigma, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
+import Astronaut2 from '../public/astronaut.webp';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
@@ -67,26 +59,16 @@ export default function Home() {
 								className='text-indigo-700 dark:text-indigo-500'>
 								Análise e Desenvolvimento de Sistemas
 							</a>
-							, com foco em{' '}
-							<span className='text-pink-500'>
-								desenvolvimento web e de software
-							</span>
-							. Estou em busca de novas{' '}
-							<span className='text-pink-500'>experiências profissionais</span>{' '}
-							e procurando melhorar minhas habilidades relacionadas a criação.
+							, com foco em <span className='text-pink-500'>desenvolvimento web e de software</span>. Estou em
+							busca de novas <span className='text-pink-500'>experiências profissionais</span> e procurando
+							melhorar minhas habilidades relacionadas a criação.
 						</p>
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-6'>
-						<a
-							href='https://www.linkedin.com/in/imlymei/'
-							rel='noreferrer'
-							target={'_blank'}>
+						<a href='https://www.linkedin.com/in/imlymei/' rel='noreferrer' target={'_blank'}>
 							<AiFillLinkedin className='hover:scale-110 transition-all' />
 						</a>
-						<a
-							href='https://github.com/imLymei'
-							rel='noreferrer'
-							target={'_blank'}>
+						<a href='https://github.com/imLymei' rel='noreferrer' target={'_blank'}>
 							<AiFillGithub className='hover:scale-110 transition-all' />
 						</a>
 					</div>
@@ -106,10 +88,7 @@ export default function Home() {
 									rel='noreferrer'>
 									<AiFillHtml5 className='hover:scale-110 transition-all' />
 								</a>
-								<a
-									href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'
-									target='_blank'
-									rel='noreferrer'>
+								<a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS' target='_blank' rel='noreferrer'>
 									<IoLogoCss3 className='hover:scale-110 transition-all' />
 								</a>
 								<a
@@ -118,10 +97,7 @@ export default function Home() {
 									rel='noreferrer'>
 									<IoLogoJavascript className='hover:scale-110 transition-all' />
 								</a>
-								<a
-									href='https://www.python.org'
-									target='_blank'
-									rel='noreferrer'>
+								<a href='https://www.python.org' target='_blank' rel='noreferrer'>
 									<IoLogoPython className='hover:scale-110 transition-all' />
 								</a>
 							</div>
@@ -135,22 +111,13 @@ export default function Home() {
 								<a href='https://nextjs.org' target='_blank' rel='noreferrer'>
 									<SiNextdotjs className='hover:scale-110 transition-all' />
 								</a>
-								<a
-									href='https://tailwindcss.com'
-									target='_blank'
-									rel='noreferrer'>
+								<a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>
 									<SiTailwindcss className='hover:scale-110 transition-all' />
 								</a>
-								<a
-									href='https://nodejs.org/en/'
-									target='_blank'
-									rel='noreferrer'>
+								<a href='https://nodejs.org/en/' target='_blank' rel='noreferrer'>
 									<SiNodedotjs className='hover:scale-110 transition-all' />
 								</a>
-								<a
-									href='https://www.figma.com'
-									target='_blank'
-									rel='noreferrer'>
+								<a href='https://www.figma.com' target='_blank' rel='noreferrer'>
 									<SiFigma className='hover:scale-110 transition-all' />
 								</a>
 							</div>
@@ -159,8 +126,7 @@ export default function Home() {
 					<div className='py-16'>
 						<h2 className='text-3xl mt-8'>Portfolio</h2>
 						<p className='leading-8 sm:px-16 lg:px-40 py-8 p-6'>
-							Aqui estão alguns dos meus{' '}
-							<span className='text-pink-500'>mais recentes projetos</span>{' '}
+							Aqui estão alguns dos meus <span className='text-pink-500'>mais recentes projetos</span>{' '}
 							relacionados principalmente com a criação de sites usando{' '}
 							<a
 								href='https://nextjs.org'
@@ -193,8 +159,7 @@ export default function Home() {
 								className='text-indigo-700 dark:text-indigo-500'>
 								Github
 							</a>{' '}
-							caso queira ver{' '}
-							<span className='text-pink-500'>todos os meus projetos</span>.
+							caso queira ver <span className='text-pink-500'>todos os meus projetos</span>.
 						</p>
 						<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-4'>
 							<div className='relative min-w-[160px] min-h-[90px] w-[20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
