@@ -66,10 +66,10 @@ export default function Home() {
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-6'>
 						<a href='https://www.linkedin.com/in/imlymei/' rel='noreferrer' target={'_blank'}>
-							<AiFillLinkedin className='hover:scale-110 transition-all' />
+							<AiFillLinkedin className='sm:hover:scale-110 transition-all' />
 						</a>
 						<a href='https://github.com/imLymei' rel='noreferrer' target={'_blank'}>
-							<AiFillGithub className='hover:scale-110 transition-all' />
+							<AiFillGithub className='sm:hover:scale-110 transition-all' />
 						</a>
 					</div>
 					<div className='relative left-[-15%] sm:left-[-10%] h-[30vw] sm:h-[20vw] w-[60vw] sm:w-[45vw] my-10'>
@@ -86,19 +86,19 @@ export default function Home() {
 									href='https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
 									target='_blank'
 									rel='noreferrer'>
-									<AiFillHtml5 className='hover:scale-110 transition-all' />
+									<AiFillHtml5 className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS' target='_blank' rel='noreferrer'>
-									<IoLogoCss3 className='hover:scale-110 transition-all' />
+									<IoLogoCss3 className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a
 									href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
 									target='_blank'
 									rel='noreferrer'>
-									<IoLogoJavascript className='hover:scale-110 transition-all' />
+									<IoLogoJavascript className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://www.python.org' target='_blank' rel='noreferrer'>
-									<IoLogoPython className='hover:scale-110 transition-all' />
+									<IoLogoPython className='sm:hover:scale-110 transition-all' />
 								</a>
 							</div>
 						</div>
@@ -106,19 +106,19 @@ export default function Home() {
 							<h3 className='text-2xl py-2'>Frameworks/Library</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
-									<SiReact className='hover:scale-110 transition-all' />
+									<SiReact className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://nextjs.org' target='_blank' rel='noreferrer'>
-									<SiNextdotjs className='hover:scale-110 transition-all' />
+									<SiNextdotjs className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>
-									<SiTailwindcss className='hover:scale-110 transition-all' />
+									<SiTailwindcss className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://nodejs.org/en/' target='_blank' rel='noreferrer'>
-									<SiNodedotjs className='hover:scale-110 transition-all' />
+									<SiNodedotjs className='sm:hover:scale-110 transition-all' />
 								</a>
 								<a href='https://www.figma.com' target='_blank' rel='noreferrer'>
-									<SiFigma className='hover:scale-110 transition-all' />
+									<SiFigma className='sm:hover:scale-110 transition-all' />
 								</a>
 							</div>
 						</div>
@@ -162,7 +162,7 @@ export default function Home() {
 							caso queira ver <span className='text-pink-500'>todos os meus projetos</span>.
 						</p>
 						<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-4'>
-							<div className='relative min-w-[160px] min-h-[90px] w-[20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://captur-one.vercel.app'
@@ -175,7 +175,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://physic-engine.vercel.app'
@@ -188,20 +188,20 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
-									href='https://kariba-eight.vercel.app/'
+									href='https://tower-of-hanoi-eight.vercel.app'
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://cdn.discordapp.com/attachments/457992163670753301/1057436940342935643/6d0d1fc6-a299-4d27-8e45-3b7fc1c03c1b.png'
-										alt='Projeto de Probabilidade Kariba'
+										src='https://cdn.discordapp.com/attachments/1033477432851836959/1063144115874840607/image.png'
+										alt='Projeto da Torre de Hanoi'
 										fill={true}
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[160px] min-h-[90px] [20vw] aspect-video dark:bg-white bg-black hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
 									href='https://github.com/imLymei/chatgpt-clone'
