@@ -204,12 +204,12 @@ export default function Home() {
 							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
 								<a
 									className='cursor-pointer'
-									href='https://github.com/imLymei/chatgpt-clone'
+									href='https://valorant-strategy-maker.vercel.app'
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://cdn.discordapp.com/attachments/1033477432851836959/1057047734684753990/image.png'
-										alt='Chatgpt Clone'
+										src='https://cdn.discordapp.com/attachments/457992163670753301/1065137173684310126/image.png'
+										alt='Valorant Strategy Maker'
 										fill={true}
 									/>
 								</a>
