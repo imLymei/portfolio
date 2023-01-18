@@ -208,7 +208,7 @@ export default function Home() {
 									target='_blank'
 									rel='noreferrer'>
 									<Image
-										src='https://cdn.discordapp.com/attachments/457992163670753301/1065137173684310126/image.png'
+										src='https://cdn.discordapp.com/attachments/457992163670753301/1065138100268965979/image.png'
 										alt='Valorant Strategy Maker'
 										fill={true}
 									/>
