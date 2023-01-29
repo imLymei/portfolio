@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<div className={darkMode ? 'whiteStar text-white  dark transition-all' : ' blackStar transition-all'}>
 			<main className='px-10'>
-				<p className='absolute text-xs sm:right-[4vw] right-[16vw] sm:top-[9vh] top-[10vh] floating dark:opacity-0 opacity-50'>
+				<p className='absolute text-xs sm:right-[4vw] right-[16vw] sm:top-[9vh] top-[10vh] floating dark:opacity-0 opacity-[0.15]'>
 					White Space...
 				</p>
 				<section className='min-h-screen'>
