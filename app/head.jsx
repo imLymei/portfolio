@@ -1,7 +1,7 @@
 export default function Head() {
 	return (
 		<>
-			<link rel='icon' href='/icon.ico' />
+			<link rel='icon' href='/icon-modified.ico' />
 
 			<meta content='width=device-width, initial-scale=1' name='viewport' />
 
