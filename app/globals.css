@@ -36,8 +36,12 @@ body {
 	animation: floating 22s ease-in-out infinite alternate;
 }
 
-.star {
-	background-image: url(https://thumbs.gfycat.com/AccurateNimbleBighornedsheep-size_restricted.gif);
+.blackStar {
+	background-image: url('../public/BlackStars.gif');
+}
+
+.whiteStar {
+	background-image: url('../public/whiteStars.gif');
 }
 
 @keyframes astronaut {
