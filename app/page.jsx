@@ -7,28 +7,29 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { GiRingedPlanet } from 'react-icons/gi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io';
 import { SiFigma, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
-import Astronaut2 from '../public/astronaut.webp';
+import Astronaut2 from '../public/astronaut2.webp';
+import Astronaut from '../public/astronaut.png';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
 
 	return (
-		<div className={darkMode ? 'bg-black text-white  dark' : ' bg-white '}>
+		<div className={darkMode ? 'star text-white  dark' : ' bg-white '}>
 			<main className='px-10'>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<GiRingedPlanet className='text-4xl dark:text-white' />
+						<GiRingedPlanet className='text-4xl dark:text-white floating' />
 						<ul className='flex items-center'>
 							<li>
 								<BsFillMoonStarsFill
-									className='cursor-pointer text-2xl'
+									className='cursor-pointer text-2xl floating-1'
 									onClick={() => {
 										setDarkMode(!darkMode);
 										console.log(darkMode);
 									}}
 								/>
 							</li>
-							<li>
+							<li className='floating-2'>
 								<a
 									className='dark:bg-white bg-black dark:text-black text-white px-4 py-2 rounded-sm ml-8'
 									href='https://cdn.discordapp.com/attachments/457992163670753301/1057427751172321360/Curriculo_Felipe_Cardoso.pdf'
@@ -40,8 +41,8 @@ export default function Home() {
 						</ul>
 					</nav>
 					<div className='text-center py-10 sm:p-10'>
-						<h1 className='text-7xl sm:text-8xl py-2'>FELIPE CARDOSO</h1>
-						<h2 className='text-3xl py-2'>Fullstack developer e programador</h2>
+						<h1 className='text-7xl sm:text-8xl py-2 floating-2'>FELIPE CARDOSO</h1>
+						<h2 className='text-3xl py-2 floating-1'>Fullstack developer e programador</h2>
 						<p className='py-6 leading-8 sm:px-16 lg:px-40'>
 							Estudante de programação na faculdade{' '}
 							<a
@@ -66,20 +67,20 @@ export default function Home() {
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-6'>
 						<a href='https://www.linkedin.com/in/imlymei/' rel='noreferrer' target={'_blank'}>
-							<AiFillLinkedin className='sm:hover:scale-110 transition-all' />
+							<AiFillLinkedin className='sm:hover:scale-110 transition-all floating-1' />
 						</a>
 						<a href='https://github.com/imLymei' rel='noreferrer' target={'_blank'}>
-							<AiFillGithub className='sm:hover:scale-110 transition-all' />
+							<AiFillGithub className='sm:hover:scale-110 transition-all floating' />
 						</a>
 					</div>
-					<div className='relative left-[-15%] sm:left-[-10%] h-[30vw] sm:h-[20vw] w-[60vw] sm:w-[45vw] my-10'>
-						<Image src={Astronaut2} alt='Lymei draw' fill={true} />
+					<div className='relative left-[-20%] sm:left-[-10%] h-[30vw] sm:h-[20vw] w-[60vw] sm:w-[45vw] my-10 astronaut'>
+						<Image src={Astronaut} alt='Lymei draw' fill={true} />
 					</div>
 				</section>
 				<section className='relative text-center min-h-screen'>
-					<h2 className='text-3xl py-16'>Skill Set</h2>
+					<h2 className='text-3xl py-16 floating'>Skill Set</h2>
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
-						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm'>
+						<div className='dark:bg-black/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm floating'>
 							<h3 className='text-2xl py-2'>Linguagens</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[6%]'>
 								<a
@@ -102,7 +103,7 @@ export default function Home() {
 								</a>
 							</div>
 						</div>
-						<div className='shadow-lg p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border dark:border-white border-black rounded-sm'>
+						<div className='dark:bg-black/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border dark:border-white border-black rounded-sm floating-1'>
 							<h3 className='text-2xl py-2'>Frameworks/Library</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
@@ -124,7 +125,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='py-16'>
-						<h2 className='text-3xl mt-8'>Portfolio</h2>
+						<h2 className='text-3xl mt-8 floating-1'>Portfolio</h2>
 						<p className='leading-8 sm:px-16 lg:px-40 py-8 p-6'>
 							Aqui estão alguns dos meus <span className='text-pink-500'>mais recentes projetos</span>{' '}
 							relacionados principalmente com a criação de sites usando{' '}
@@ -162,7 +163,7 @@ export default function Home() {
 							caso queira ver <span className='text-pink-500'>todos os meus projetos</span>.
 						</p>
 						<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-4'>
-							<div className='relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white floating-1'>
 								<a
 									className='cursor-pointer'
 									href='https://captur-one.vercel.app'
@@ -175,7 +176,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white floating-2'>
 								<a
 									className='cursor-pointer'
 									href='https://physic-engine.vercel.app'
@@ -188,7 +189,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white floating'>
 								<a
 									className='cursor-pointer'
 									href='https://tower-of-hanoi-eight.vercel.app'
@@ -201,7 +202,7 @@ export default function Home() {
 									/>
 								</a>
 							</div>
-							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white'>
+							<div className='relative min-w-[144px] min-h-[81px] [20vw] aspect-video dark:bg-white bg-black sm:hover:scale-110 transition-all rounded-sm border border-black dark:border-white floating-1'>
 								<a
 									className='cursor-pointer'
 									href='https://valorant-strategy-maker.vercel.app'
