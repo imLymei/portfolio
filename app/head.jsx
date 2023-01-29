@@ -13,29 +13,29 @@ export default function Head() {
 
 			<meta
 				name='description'
-				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
+				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único, minimalista e responsivo. Vamos criar juntos! Entre em contato comigo pelo meu email: lymeicontato@gmail.com ou pelas redes sociais. Obrigado pela visita, o Programador Felipe Cardoso agradece sua atenção, Aproveite o Portfolio.'
 			/>
 
 			<meta
-				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
+				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único, minimalista e responsivo. Vamos criar juntos! Entre em contato comigo pelo meu email: lymeicontato@gmail.com ou pelas redes sociais. Obrigado pela visita, o Programador Felipe Cardoso agradece sua atenção, Aproveite o Portfolio.'
 				property='description'
 			/>
 
 			<meta content='Full Stack Developer | Felipe Cardoso' property='og:title' />
 			<meta
-				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
+				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único, minimalista e responsivo. Vamos criar juntos! Entre em contato comigo pelo meu email: lymeicontato@gmail.com ou pelas redes sociais. Obrigado pela visita, o Programador Felipe Cardoso agradece sua atenção, Aproveite o Portfolio.'
 				property='og:description'
 			/>
 			<meta
-				content='https://cdn.discordapp.com/attachments/457992163670753301/1057438765481730118/image.png'
+				content='https://cdn.discordapp.com/attachments/457992163670753301/1069346587379241030/image.png'
 				property='og:image'></meta>
 
 			<meta content='Full Stack Developer | Felipe Cardoso' property='twitter:title'></meta>
 			<meta
-				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único e minimalista. Vamos criar juntos! Entre em contato comigo pelo meu site ou redes sociais: Felipe Cardoso | imLymei | Lymei'
+				content='Portfólio de desenvolvedor full stack do programador Felipe Cardoso, com um website único, minimalista e responsivo. Vamos criar juntos! Entre em contato comigo pelo meu email: lymeicontato@gmail.com ou pelas redes sociais. Obrigado pela visita, o Programador Felipe Cardoso agradece sua atenção, Aproveite o Portfolio.'
 				property='twitter:description'></meta>
 			<meta
-				content='https://cdn.discordapp.com/attachments/457992163670753301/1057438765481730118/image.png'
+				content='https://cdn.discordapp.com/attachments/457992163670753301/1069346587379241030/image.png'
 				property='twitter:image'></meta>
 			<meta content='summary_large_image' name='twitter:card'></meta>
 
