@@ -11,7 +11,7 @@ export const ProjectsNames = [
 		name: 'kariba-counter',
 		title: 'Contador de cartas para Kariba',
 		tags: ['Next.js', 'Node.js', 'Tailwind CSS'],
-		url: 'http://kariba-eight.vercel.app/',
+		url: 'https://kariba-eight.vercel.app',
 		image:
 			'https://cdn.discordapp.com/attachments/457992163670753301/1057436940342935643/6d0d1fc6-a299-4d27-8e45-3b7fc1c03c1b.png',
 		github: 'https://github.com/imLymei/kariba-card-counter',
