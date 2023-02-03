@@ -67,27 +67,27 @@ export default function PortfolioPage() {
 					<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-y-8 mb-10'>
 						{ProjectsNames.map((e, index) => {
 							return (
-								<div key={index}>
+								<div key={index} className='flex flex-col justify-start items-center'>
 									<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
 										<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
 											<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
 										</a>
 									</div>
 									<h2 className='text-center py-2'>{e.title}</h2>
-									<div className='grid grid-flow-col justify-evenly gap-y-2'>
+									<div className='grid grid-flow-col justify-evenly gap-y-2 gap-x-[3vw]'>
 										{e.tags.map((e, index) => {
 											return (
 												<h3
 													key={index}
-													className={`cursor-default border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[6vw] text-center rounded-sm ${
+													className={`cursor-default border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
 														index % 3 == 0
-															? `col-[1]`
+															? `sm:col-[1]`
 															: index % 3 == 1
-															? 'col-[2]'
+															? 'sm:col-[2]'
 															: index % 3 == 2
-															? 'col-[3]'
+															? 'sm:col-[3]'
 															: ''
-													}`}>
+													} ${index % 2 == 0 ? `col-[1]` : index % 3 == 1 ? 'col-[2]' : ''}`}>
 													{e}
 												</h3>
 											);

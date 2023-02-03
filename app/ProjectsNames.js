@@ -19,7 +19,7 @@ export const ProjectsNames = [
 	{
 		name: 'physic-engine',
 		title: 'Engine de física',
-		tags: ['HTML/CSS', 'Javascript'],
+		tags: ['HTML/CSS', 'Javascript', 'PC only'],
 		url: 'https://physic-engine.vercel.app/',
 		image:
 			'https://cdn.discordapp.com/attachments/457992163670753301/1057434786983059496/de64601d-592f-462a-bf0f-ac0af20058c6.png',
@@ -44,7 +44,7 @@ export const ProjectsNames = [
 	{
 		name: 'self-driving-car',
 		title: 'Carro controlado por IA',
-		tags: ['HTML/CSS', 'Javascript'],
+		tags: ['HTML/CSS', 'Javascript', 'PC recommended'],
 		url: 'https://self-driving-car-ten.vercel.app',
 		image: 'https://cdn.discordapp.com/attachments/1033477432851836959/1070405512056799242/image.png',
 		github: 'https://github.com/imLymei/self-driving-car',
