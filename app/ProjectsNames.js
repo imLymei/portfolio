@@ -3,7 +3,7 @@ export const ProjectsNames = [
 		name: 'captur',
 		title: 'Portfolio Captur photography',
 		tags: ['Next.js', 'Node.js', 'Tailwind CSS'],
-		url: 'http://captur-one.vercel.app/',
+		url: 'https://captur-one.vercel.app/',
 		image: 'https://github.com/imLymei/captur-proj/raw/main/public/print1.png',
 		github: 'https://github.com/imLymei/captur-proj',
 	},
@@ -20,7 +20,7 @@ export const ProjectsNames = [
 		name: 'physic-engine',
 		title: 'Engine de física',
 		tags: ['HTML/CSS', 'Javascript'],
-		url: 'http://physic-engine.vercel.app/',
+		url: 'https://physic-engine.vercel.app/',
 		image:
 			'https://cdn.discordapp.com/attachments/457992163670753301/1057434786983059496/de64601d-592f-462a-bf0f-ac0af20058c6.png',
 		github: 'https://github.com/imLymei/Physic-Engine',
