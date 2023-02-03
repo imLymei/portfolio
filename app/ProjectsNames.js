@@ -8,7 +8,7 @@ export const ProjectsNames = [
 		github: 'https://github.com/imLymei/captur-proj',
 	},
 	{
-		name: 'kaliba-counter',
+		name: 'kariba-counter',
 		title: 'Contador de cartas para Kariba',
 		tags: ['Next.js', 'Node.js', 'Tailwind CSS'],
 		url: 'http://kariba-eight.vercel.app/',
