@@ -1,11 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { AiFillGithub, AiFillHtml5, AiFillLinkedin } from 'react-icons/ai';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsArrowUpRight, BsFillMoonStarsFill } from 'react-icons/bs';
 import { GiRingedPlanet } from 'react-icons/gi';
-import { IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io';
+import { IoLogoCss3, IoLogoJavascript, IoLogoPython, IoMdRocket } from 'react-icons/io';
 import { SiFigma, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
 import Astronaut from '../public/astronaut.png';
 
@@ -15,29 +16,33 @@ export default function Home() {
 	return (
 		<div className={darkMode ? 'whiteStar text-white  dark transition-all' : ' blackStar transition-all'}>
 			<main className='px-10'>
-				<p className='absolute text-xs sm:right-[4vw] right-[16vw] sm:top-[9vh] top-[10vh] floating dark:opacity-0 opacity-[0.15]'>
+				<p className='absolute text-xs sm:right-[4vw] right-[16vw] sm:top-[9vh] top-[10vh] floating-0 dark:opacity-0 opacity-[0.15]'>
 					White Space...
 				</p>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<GiRingedPlanet className='text-4xl dark:text-white floating' />
+						<div className='floating-1'>
+							<Link href='/'>
+								<GiRingedPlanet className='cursor-pointer text-4xl dark:text-white hover110' />
+							</Link>
+						</div>
 						<ul className='flex items-center'>
-							<li>
+							<li className='floating-1'>
 								<BsFillMoonStarsFill
-									className='cursor-pointer text-2xl floating-1'
+									className='cursor-pointer text-2xl hover110'
 									onClick={() => {
 										setDarkMode(!darkMode);
-										console.log(darkMode);
 									}}
 								/>
 							</li>
 							<li className='floating-2'>
-								<a
-									className='dark:bg-white bg-black dark:text-black text-white px-4 py-2 rounded-sm ml-8'
-									href='https://cdn.discordapp.com/attachments/457992163670753301/1057427751172321360/Curriculo_Felipe_Cardoso.pdf'
-									download>
-									Resume
-								</a>
+								<div className='hover110 ml-8'>
+									<a
+										className='dark:bg-white bg-black dark:text-black text-white px-4 py-2 rounded-sm'
+										href='/resume'>
+										Resume
+									</a>
+								</div>
 								{/* Updated 27/12/2022 */}
 							</li>
 						</ul>
@@ -64,21 +69,25 @@ export default function Home() {
 						</p>
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-6'>
-						<a href='https://www.linkedin.com/in/imlymei/' rel='noreferrer' target={'_blank'}>
-							<AiFillLinkedin className='hover110 floating-1' />
-						</a>
-						<a href='https://github.com/imLymei' rel='noreferrer' target={'_blank'}>
-							<AiFillGithub className='hover110 floating' />
-						</a>
+						<div className='floating-1'>
+							<a href='https://www.linkedin.com/in/imlymei/' rel='noreferrer' target={'_blank'}>
+								<AiFillLinkedin className='hover110' />
+							</a>
+						</div>
+						<div className='floating-0'>
+							<a href='https://github.com/imLymei' rel='noreferrer' target={'_blank'}>
+								<AiFillGithub className='hover110' />
+							</a>
+						</div>
 					</div>
 					<div className='relative left-[-20%] sm:left-[-10%] h-[30vw] sm:h-[20vw] w-[60vw] sm:w-[45vw] my-10 astronaut'>
-						<Image src={Astronaut} alt='Lymei draw' fill={true} />
+						<Image src={Astronaut} alt='Lymei draw' fill={true} sizes='60vw' priority />
 					</div>
 				</section>
 				<section className='relative text-center min-h-screen'>
-					<h2 className='text-3xl py-16 floating'>Skill Set</h2>
+					<h2 className='text-3xl py-16 floating-0'>Skill Set</h2>
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
-						<div className='skillCard floating'>
+						<div className='skillCard floating-0'>
 							<h3 className='text-2xl py-2'>Linguagens</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[6%]'>
 								<a
@@ -124,84 +133,22 @@ export default function Home() {
 					</div>
 					<div className='py-16'>
 						<h2 className='text-3xl mt-8 floating-1'>Portfolio</h2>
-						<p className='pText py-8 p-6'>
-							Aqui estão alguns dos meus <span className='text-pink-500'>mais recentes projetos</span>{' '}
-							relacionados principalmente com a criação de sites usando{' '}
-							<a href='https://nextjs.org' target='_blank' rel='noreferrer' className='link'>
-								Next.js
-							</a>{' '}
-							ou alguns programas utilizando{' '}
-							<a
-								href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
-								target='_blank'
-								rel='noreferrer'
-								className='link'>
-								Javascript
-							</a>{' '}
-							ou{' '}
-							<a href='https://www.python.org' target='_blank' rel='noreferrer' className='link'>
-								Python
-							</a>
-							. Acesse meu{' '}
+						<p className='pText p-6'>
+							Clique no foguete para <span className='text-pink-500'>viajar</span> pelas minhas criações.
+						</p>
+						<div className='flex justify-center items-center floating-2 mb-2'>
+							<Link href='/portfolio'>
+								<IoMdRocket className='cursor-pointer text-6xl rotate-45 dark:text-white hover110' />
+							</Link>
+						</div>
+						<BsArrowUpRight className='text-2xl mx-auto dark:text-white floating-0' />
+						<p className='pText p-6'>
+							Caso queira ver <span className='text-pink-500'>todos os meus projetos</span>, acesse meu{' '}
 							<a href='https://github.com/imLymei' target='_blank' rel='noreferrer' className='link'>
 								Github
-							</a>{' '}
-							caso queira ver <span className='text-pink-500'>todos os meus projetos</span>.
+							</a>
+							!
 						</p>
-						<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-4'>
-							<div className='portfolioCard floating-1'>
-								<a
-									className='cursor-pointer'
-									href='https://captur-one.vercel.app'
-									target='_blank'
-									rel='noreferrer'>
-									<Image
-										src='https://github.com/imLymei/captur-proj/raw/main/public/print1.png'
-										alt='Captur Portfolio'
-										fill={true}
-									/>
-								</a>
-							</div>
-							<div className='portfolioCard floating-2'>
-								<a
-									className='cursor-pointer'
-									href='https://physic-engine.vercel.app'
-									target='_blank'
-									rel='noreferrer'>
-									<Image
-										src='https://cdn.discordapp.com/attachments/457992163670753301/1057434786983059496/de64601d-592f-462a-bf0f-ac0af20058c6.png'
-										alt='Physic engine'
-										fill={true}
-									/>
-								</a>
-							</div>
-							<div className='portfolioCard floating'>
-								<a
-									className='cursor-pointer'
-									href='https://tower-of-hanoi-eight.vercel.app'
-									target='_blank'
-									rel='noreferrer'>
-									<Image
-										src='https://cdn.discordapp.com/attachments/1033477432851836959/1063144115874840607/image.png'
-										alt='Projeto da Torre de Hanoi'
-										fill={true}
-									/>
-								</a>
-							</div>
-							<div className='portfolioCard floating-1'>
-								<a
-									className='cursor-pointer'
-									href='https://self-driving-car-ten.vercel.app'
-									target='_blank'
-									rel='noreferrer'>
-									<Image
-										src='https://cdn.discordapp.com/attachments/1033477432851836959/1070405512056799242/image.png'
-										alt='Self-driving car machine learning project'
-										fill={true}
-									/>
-								</a>
-							</div>
-						</div>
 					</div>
 				</section>
 			</main>
