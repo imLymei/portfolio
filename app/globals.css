@@ -17,6 +17,26 @@ body {
 	font-family: 'Roboto Mono', monospace;
 }
 
+.link {
+	@apply text-indigo-700 dark:text-indigo-500;
+}
+
+.hover110 {
+	@apply sm:hover:scale-110 transition-all;
+}
+
+.skillCard {
+	@apply dark:bg-black/75 bg-white/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm;
+}
+
+.portfolioCard {
+	@apply relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black sm:hover:scale-105 transition-all rounded-sm border border-black dark:border-white;
+}
+
+.pText {
+	@apply leading-8 sm:px-16 lg:px-40;
+}
+
 .astronaut {
 	animation: astronaut 20s cubic-bezier(0.33, 0, 0.67, 0.99) infinite alternate;
 }
@@ -55,18 +75,18 @@ body {
 
 @keyframes floating {
 	0% {
-		transform: rotate(1deg) translate(0vw, -0.7vh);
+		transform: rotate(1deg) translate(0vw, -0.7vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 	25% {
-		transform: rotate(0deg) translate(0vw, 0.45vh);
+		transform: rotate(0deg) translate(0vw, 0.45vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 	50% {
-		transform: rotate(-1deg) translate(0vw, -0.5vh);
+		transform: rotate(-1deg) translate(0vw, -0.5vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 	75% {
-		transform: rotate(-0.2deg) translate(0vw, 0.35vh);
+		transform: rotate(-0.2deg) translate(0vw, 0.35vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 	100% {
-		transform: rotate(0.6deg) translate(0vw, -0.6vh);
+		transform: rotate(0.6deg) translate(0vw, -0.6vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 }
