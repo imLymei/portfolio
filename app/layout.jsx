@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import './globals.css';
-import Loading from './loading';
+import Loading from './Loading';
 
 export default function RootLayout({ children }) {
 	return (
