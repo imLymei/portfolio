@@ -74,7 +74,7 @@ export default function PortfolioPage() {
 										</a>
 									</div>
 									<h2 className='text-center py-2'>{e.title}</h2>
-									<div className='grid grid-flow-col justify-evenly gap-y-2 gap-x-[3vw]'>
+									<div className='grid grid-flow-col justify-evenly gap-y-2 gap-x-[3vw] lg:gap-x-[4vw]'>
 										{e.tags.map((e, index) => {
 											return (
 												<h3
