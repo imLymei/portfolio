@@ -7,7 +7,17 @@ import { AiFillGithub, AiFillHtml5, AiFillLinkedin } from 'react-icons/ai';
 import { BsArrowUpRight, BsFillMoonStarsFill } from 'react-icons/bs';
 import { GiRingedPlanet } from 'react-icons/gi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoPython, IoMdRocket } from 'react-icons/io';
-import { SiFigma, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
+import {
+	SiCsharp,
+	SiFigma,
+	SiJava,
+	SiMongodb,
+	SiMysql,
+	SiNextdotjs,
+	SiNodedotjs,
+	SiReact,
+	SiTailwindcss,
+} from 'react-icons/si';
 import Astronaut from '../public/astronaut.png';
 
 export default function Home() {
@@ -43,13 +53,13 @@ export default function Home() {
 										Resume
 									</a>
 								</div>
-								{/* Updated 27/12/2022 */}
+								{/* Updated 22/04/2023 */}
 							</li>
 						</ul>
 					</nav>
 					<div className='text-center py-10 sm:p-10'>
 						<h1 className='text-7xl sm:text-8xl py-2 floating-2'>FELIPE CARDOSO</h1>
-						<h2 className='text-3xl py-2 floating-1'>Fullstack developer e programador</h2>
+						<h2 className='text-3xl py-2 floating-1'>Fullstack developer</h2>
 						<p className='py-6 pText'>
 							Estudante de programação na faculdade{' '}
 							<a href='https://www.unisanta.br' target='_blank' rel='noreferrer' className='link'>
@@ -108,10 +118,16 @@ export default function Home() {
 								<a href='https://www.python.org' target='_blank' rel='noreferrer'>
 									<IoLogoPython className='hover110' />
 								</a>
+								<a href='https://www.java.com' target='_blank' rel='noreferrer'>
+									<SiCsharp className='hover110' />
+								</a>
+								<a href='https://www.java.com' target='_blank' rel='noreferrer'>
+									<SiJava className='hover110' />
+								</a>
 							</div>
 						</div>
 						<div className='skillCard floating-1'>
-							<h3 className='text-2xl py-2'>Frameworks/Library</h3>
+							<h3 className='text-2xl py-2'>Outros</h3>
 							<div className='text-4xl md:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
 									<SiReact className='hover110' />
@@ -127,6 +143,12 @@ export default function Home() {
 								</a>
 								<a href='https://www.figma.com' target='_blank' rel='noreferrer'>
 									<SiFigma className='hover110' />
+								</a>
+								<a href='https://www.mysql.com' target='_blank' rel='noreferrer'>
+									<SiMysql className='hover110' />
+								</a>
+								<a href='https://www.mongodb.com' target='_blank' rel='noreferrer'>
+									<SiMongodb className='hover110' />
 								</a>
 							</div>
 						</div>
