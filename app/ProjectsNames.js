@@ -49,4 +49,12 @@ export const ProjectsNames = [
 		image: 'https://cdn.discordapp.com/attachments/1033477432851836959/1070405512056799242/image.png',
 		github: 'https://github.com/imLymei/self-driving-car',
 	},
+	{
+		name: 'todo-app-angular',
+		title: 'Todo-App com API e Banco de Dados',
+		tags: ['Angular', 'Javascript', 'Express.js', 'MongoDb'],
+		url: 'https://todo-app-imlymei.vercel.app',
+		image: 'https://cdn.discordapp.com/attachments/859640514571927562/1099433697310158940/image.png',
+		github: 'https://github.com/imLymei/TodoApp',
+	},
 ];
