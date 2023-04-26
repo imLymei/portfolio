@@ -9,7 +9,7 @@ export const ProjectsNames = [
 		date: 'Novembro de 2022',
 		isHomeScreen: true,
 		description:
-			'Um dos meus primeiros projetos feito com React.js e Next.js feito em Novembro de 2022. O site consiste de um portfolio fictício para uma empresa fotográfica.',
+			'Um dos meus primeiros projetos feito com React.js e Next.js. O site consiste de um portfolio fictício para uma empresa fotográfica com galerias de fotos, paginas dedicadas e Hero Design.',
 		learning:
 			'Nesse projeto aprendi os básicos de React.js e Next.js, como hooks, criar componentes e a estrutura de páginas do Next.js.',
 	},
@@ -24,7 +24,7 @@ export const ProjectsNames = [
 		date: 'Dezembro de 2022',
 		isHomeScreen: true,
 		description:
-			'Um dos meus primeiros projetos com Next.js e Tailwind CSS feito em Dezembro de 2022. O site inicialmente foi feito pela curiosidade de como calcular a chance de meu adversário, no jogo Kariba, conter uma carta específica dentre as cartas restantes no baralho.',
+			'Um dos meus primeiros projetos com Next.js e Tailwind CSS. O site inicialmente foi feito pela curiosidade de como calcular a chance de meu adversário, no jogo Kariba, conter uma carta específica dentre as cartas restantes no baralho.',
 		learning: 'Nesse projeto aprendi principalmente os básicos sobre Tailwind CSS e cálculos de estatística.',
 	},
 	{
@@ -38,7 +38,7 @@ export const ProjectsNames = [
 		date: 'Dezembro de 2022',
 		isHomeScreen: true,
 		description:
-			'Uma engine de física feita completamente com Javascript e Matemática. Fiz esse projeto para melhorar minhas habilidades de lógica de programação, cálculos de vetores e POO.',
+			'Uma engine de física feita completamente com Javascript e Matemática. Fiz esse projeto para melhorar minhas habilidades de lógica de programação, cálculos de vetores e POO. Cada bola possui um eficiente elástico aleatório, o que torna a simulação mais interessante.',
 		learning:
 			'Esse projeto melhorou minhas habilidade matemáticas e meu conhecimento geral sobre Javascript.',
 	},
@@ -52,7 +52,7 @@ export const ProjectsNames = [
 		date: 'Janeiro de 2022',
 		isHomeScreen: true,
 		description:
-			'Um projeto simples sobre a Torre de Hanoi que utilizei para melhorar minhas habilidades com React.js, hooks, Tailwind CSS e lógica de programação',
+			'Um projeto simples sobre a Torre de Hanoi que utilizei para melhorar minhas habilidades com React.js, hooks, Tailwind CSS e lógica de programação. O objetivo do jogo é passar todos os pinos da pilha A para a pilha C.',
 		learning:
 			'Essa aplicação me ensinou principalmente sobre boas práticas com hooks, a utilização de IF e ELSE nas classes do Tailwind CSS e utilização de pilhas de forma básica.',
 	},
@@ -77,7 +77,7 @@ export const ProjectsNames = [
 		date: 'Fevereiro de 2023',
 		isHomeScreen: true,
 		description:
-			'Uma aplicação feita por curiosidade sobre IAs e Machine Learning. Esse projeto faz parte do material de estudos do FreeCodeCamp.',
+			'Uma aplicação feita por curiosidade sobre IAs e Machine Learning. Esse projeto faz parte do material de estudos do FreeCodeCamp, e nele criei uma IA que aprende a dirigir um carro enquanto desvia dos obstáculos.',
 		learning:
 			'Fazendo esse site aprendi como as IAs são estruturadas com Deep Learning e melhores práticas com o Javascript.',
 	},
@@ -91,7 +91,7 @@ export const ProjectsNames = [
 		date: 'Abril de 2023',
 		isHomeScreen: true,
 		description:
-			'Meu primeiro projeto feito com Angular no Frontend, API feita com Express.js e integração com um Banco de Dados NoSQL(MongoDB) como Projeto Acadêmico.',
+			'Meu primeiro projeto feito com Angular no Frontend, API feita com Express.js e integração com um Banco de Dados NoSQL(MongoDB) como Projeto Acadêmico, e com essas tecnologias fiz um simples Todo App.',
 		learning:
 			'Nesse projeto aprendi como os sites feitos em Angular sao feitos, como criar e hospedar uma API feita com Express.js e conectar todo o projeto com o Banco de Dados do MongoDb.',
 	},
