@@ -26,12 +26,16 @@ body {
 	@apply sm:hover:scale-110 transition-all duration-300;
 }
 
+.hover105 {
+	@apply sm:hover:scale-105 transition-all duration-300;
+}
+
 .skillCard {
 	@apply dark:bg-black/75 bg-white/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm;
 }
 
 .portfolioCard {
-	@apply relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black sm:hover:scale-105 transition-all rounded-sm border border-black dark:border-white;
+	@apply relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black rounded-sm border border-black dark:border-white;
 }
 
 .pText {
@@ -58,6 +62,11 @@ body {
 .floating-2 {
 	transform-origin: center center;
 	animation: floating 22s ease-in-out infinite alternate;
+}
+
+.floating-3 {
+	transform-origin: center center;
+	animation: floating2 20s ease-in-out infinite alternate;
 }
 
 .blackStar {
@@ -94,5 +103,23 @@ body {
 	}
 	100% {
 		transform: rotate(0.6deg) translate(0vw, -0.6vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	}
+}
+
+@keyframes floating2 {
+	0% {
+		transform: rotate(0deg) translate(-5px, -0.7vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	}
+	25% {
+		transform: rotate(0deg) translate(-5px, 0.45vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	}
+	50% {
+		transform: rotate(0deg) translate(-5px, -0.5vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	}
+	75% {
+		transform: rotate(0deg) translate(-5px, 0.35vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	}
+	100% {
+		transform: rotate(0deg) translate(-5px, -0.6vh) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	}
 }

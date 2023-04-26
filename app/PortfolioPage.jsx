@@ -68,10 +68,12 @@ export default function PortfolioPage() {
 						{ProjectsNames.map((e, index) => {
 							return (
 								<div key={index} className='flex flex-col justify-start items-center'>
-									<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
-										<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
-											<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
-										</a>
+									<div className='hover105'>
+										<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
+											<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
+												<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
+											</a>
+										</div>
 									</div>
 									<h2 className='text-center py-2'>{e.title}</h2>
 									<div className='grid grid-flow-col justify-evenly gap-y-2 gap-x-[3vw] lg:gap-x-[4vw]'>
@@ -79,7 +81,7 @@ export default function PortfolioPage() {
 											return (
 												<h3
 													key={index}
-													className={`cursor-default border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
+													className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
 														index % 3 == 0
 															? `sm:col-[1]`
 															: index % 3 == 1

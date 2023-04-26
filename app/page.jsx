@@ -19,9 +19,11 @@ import {
 	SiTailwindcss,
 } from 'react-icons/si';
 import Astronaut from '../public/astronaut.png';
+import { ProjectsNames } from './ProjectsNames';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
+	let appsSideDecider = 0;
 
 	return (
 		<div className={darkMode ? 'whiteStar text-white  dark transition-all' : ' blackStar transition-all'}>
@@ -59,7 +61,7 @@ export default function Home() {
 					</nav>
 					<div className='text-center py-10 sm:p-10'>
 						<h1 className='text-7xl sm:text-8xl py-2 floating-2'>FELIPE CARDOSO</h1>
-						<h2 className='text-3xl py-2 floating-1'>Fullstack developer</h2>
+						<h2 className='text-4xl py-2 floating-1'>Fullstack developer</h2>
 						<p className='py-6 pText'>
 							Estudante de programação na faculdade{' '}
 							<a href='https://www.unisanta.br' target='_blank' rel='noreferrer' className='link'>
@@ -95,11 +97,11 @@ export default function Home() {
 					</div>
 				</section>
 				<section className='relative text-center min-h-screen'>
-					<h2 className='text-3xl py-16 floating-0'>Skill Set</h2>
+					<h2 className='text-4xl py-16 floating-0'>Skill Set</h2>
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
-						<div className='skillCard floating-0'>
-							<h3 className='text-2xl py-2'>Linguagens</h3>
-							<div className='text-4xl md:text-5xl flex justify-center gap-[6%]'>
+						<div className='skillCard floating-0 text-2xl'>
+							<h3 className='py-2'>Linguagens</h3>
+							<div className='md:text-5xl flex justify-center gap-[6%]'>
 								<a
 									href='https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
 									target='_blank'
@@ -126,9 +128,9 @@ export default function Home() {
 								</a>
 							</div>
 						</div>
-						<div className='skillCard floating-1'>
-							<h3 className='text-2xl py-2'>Outros</h3>
-							<div className='text-4xl md:text-5xl flex justify-center gap-[3%]'>
+						<div className='skillCard floating-1 text-2xl'>
+							<h3 className='py-2'>Outros</h3>
+							<div className='md:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
 									<SiReact className='hover110' />
 								</a>
@@ -153,8 +155,86 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+					<h2 className='text-4xl mt-8 floating-1'>Portfolio</h2>
+					<h3 className='mb-8 text-xs floating-0'>
+						<span className='text-pink-500 select-none'>Grande Parte</span> dos meus{' '}
+						<span className='link select-none'>códigos</span> estão em{' '}
+						<span className='link select-none'>Inglês</span> por{' '}
+						<span className='text-pink-500 select-none'>convenção</span>.
+					</h3>
+					<div className='max-sm:opacity-0 w-[5px] h-[390vh] absolute rounded-sm right-2 border border-black dark:border-white floating-3'></div>
+					<div className='flex flex-col gap-12'>
+						{ProjectsNames.map((e, index) => {
+							if (e.isHomeScreen) {
+								appsSideDecider++;
+								return (
+									<div key={index}>
+										<div className='max-sm:opacity-0 w-4 h-4 bg-black dark:bg-white rounded-lg flex justify-center items-center absolute right-2 floating-0'>
+											<div className='w-2 h-2 dark:bg-black bg-white rounded-lg'></div>
+											<h4 className='absolute right-0 w-[10vw] mr-6'>
+												<span className='text-pink-500 select-none'>{e.date}</span>
+											</h4>
+										</div>
+										<div className='p-6'>
+											<h3 className=' text-2xl text-center mx-auto'>
+												<span className='text-pink-500'>{e.title}</span>
+											</h3>
+											<h4 className='lg:w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
+										</div>
+										<div className='flex flex-col justify-start items-center'>
+											<div className='hover105'>
+												<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
+													<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
+														<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
+													</a>
+												</div>
+											</div>
+											<h2 className='text-center py-2'>{e.title}</h2>
+											<div className='grid grid-flow-col justify-evenly gap-y-2 gap-x-[3vw] lg:gap-x-[4vw]'>
+												{e.tags.map((e, index) => {
+													return (
+														<h3
+															key={index}
+															className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
+																index % 3 == 0
+																	? `sm:col-[1]`
+																	: index % 3 == 1
+																	? 'sm:col-[2]'
+																	: index % 3 == 2
+																	? 'sm:col-[3]'
+																	: ''
+															} ${index % 2 == 0 ? `col-[1]` : index % 3 == 1 ? 'col-[2]' : ''}`}>
+															{e}
+														</h3>
+													);
+												})}
+											</div>
+											<h4 className='p-6 lg:w-[50vw] text-center mx-auto text-sm link'>
+												<span className='link'>{e.learning}</span>
+											</h4>
+											<div className='floating-0 pt-4'>
+												<a
+													href={e.github}
+													className='flex flex-col items-center hover110'
+													rel='noreferrer'
+													target={'_blank'}>
+													<AiFillGithub className='hover110 text-2xl' />
+													<h4 className='text-xs'>Link do projeto</h4>
+												</a>
+											</div>
+										</div>
+									</div>
+								);
+							}
+						})}
+					</div>
+					<div className='absolute my-6 -translate-x-full right-2 flex flex-col gap-4'>
+						<div className='max-sm:opacity-0 w-[5px] h-8 opacity-75 relative rounded-sm border border-black dark:border-white floating-2'></div>
+						<div className='max-sm:opacity-0 w-[5px] h-4 opacity-50 relative rounded-sm border border-black dark:border-white floating-1'></div>
+						<div className='max-sm:opacity-0 w-[5px] h-2 opacity-25 relative rounded-sm border border-black dark:border-white floating-1'></div>
+						<div className='max-sm:opacity-0 w-[5px] h-1 opacity-10 relative rounded-sm border border-black dark:border-white floating-0'></div>
+					</div>
 					<div className='py-16'>
-						<h2 className='text-3xl mt-8 floating-1'>Portfolio</h2>
 						<p className='pText p-6'>
 							Clique no foguete para <span className='text-pink-500'>viajar</span> pelas minhas criações.
 						</p>
