@@ -162,7 +162,7 @@ export default function Home() {
 						<span className='link select-none'>Inglês</span> por{' '}
 						<span className='text-pink-500 select-none'>convenção</span>.
 					</h3>
-					<div className='max-sm:opacity-0 w-[5px] h-[390vh] absolute rounded-sm right-2 border border-black dark:border-white floating-3'></div>
+					<div className='max-sm:opacity-0 w-[5px] h-[396vh] absolute rounded-sm right-2 border border-black dark:border-white floating-3'></div>
 					<div className='flex flex-col gap-12'>
 						{ProjectsNames.map((e, index) => {
 							if (e.isHomeScreen) {
