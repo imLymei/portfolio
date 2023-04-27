@@ -162,7 +162,14 @@ export default function Home() {
 						<span className='link select-none'>Inglês</span> por{' '}
 						<span className='text-pink-500 select-none'>convenção</span>.
 					</h3>
-					<div className='max-sm:opacity-0 w-[5px] h-[396vh] absolute rounded-sm right-2 border border-black dark:border-white floating-3'></div>
+					<div className='max-sm:opacity-0 w-[5px] sm:h-[374vh] md:h-[374vh] absolute rounded-sm right-2 border border-black dark:border-white floating-3'>
+						<div className='absolute bottom-0 translate-y-[120%] -translate-x-1/3 flex flex-col gap-4'>
+							<div className='max-sm:opacity-0 w-[5px] h-8 opacity-75 relative rounded-sm border border-black dark:border-white floating-2'></div>
+							<div className='max-sm:opacity-0 w-[5px] h-4 opacity-50 relative rounded-sm border border-black dark:border-white floating-1'></div>
+							<div className='max-sm:opacity-0 w-[5px] h-2 opacity-25 relative rounded-sm border border-black dark:border-white floating-1'></div>
+							<div className='max-sm:opacity-0 w-[5px] h-1 opacity-10 relative rounded-sm border border-black dark:border-white floating-0'></div>
+						</div>
+					</div>
 					<div className='flex flex-col gap-12'>
 						{ProjectsNames.map((e, index) => {
 							if (e.isHomeScreen) {
@@ -179,13 +186,13 @@ export default function Home() {
 											<h3 className=' text-2xl text-center mx-auto'>
 												<span className='text-pink-500'>{e.title}</span>
 											</h3>
-											<h4 className='lg:w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
+											<h4 className='w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
 										</div>
 										<div className='flex flex-col justify-start items-center'>
 											<div className='hover105'>
 												<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
 													<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
-														<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
+														<Image src={e.image} alt={e.title} fill={true} sizes='1' />
 													</a>
 												</div>
 											</div>
@@ -228,12 +235,7 @@ export default function Home() {
 							}
 						})}
 					</div>
-					<div className='absolute my-6 -translate-x-full right-2 flex flex-col gap-4'>
-						<div className='max-sm:opacity-0 w-[5px] h-8 opacity-75 relative rounded-sm border border-black dark:border-white floating-2'></div>
-						<div className='max-sm:opacity-0 w-[5px] h-4 opacity-50 relative rounded-sm border border-black dark:border-white floating-1'></div>
-						<div className='max-sm:opacity-0 w-[5px] h-2 opacity-25 relative rounded-sm border border-black dark:border-white floating-1'></div>
-						<div className='max-sm:opacity-0 w-[5px] h-1 opacity-10 relative rounded-sm border border-black dark:border-white floating-0'></div>
-					</div>
+
 					<div className='py-16'>
 						<p className='pText p-6'>
 							Clique no foguete para <span className='text-pink-500'>viajar</span> pelas minhas criações.
