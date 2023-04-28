@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { GiRingedPlanet } from 'react-icons/gi';
 import { ProjectsNames } from './ProjectsNames';
+import { AiFillGithub } from 'react-icons/ai';
 
 export default function PortfolioPage() {
 	const [darkMode, setDarkMode] = useState(true);
@@ -94,6 +95,16 @@ export default function PortfolioPage() {
 												</h3>
 											);
 										})}
+									</div>
+									<div className='floating-0 pt-4'>
+										<a
+											href={e.github}
+											className='flex flex-col items-center hover110'
+											rel='noreferrer'
+											target={'_blank'}>
+											<AiFillGithub className='hover110 text-2xl' />
+											<h4 className='text-xs'>Link do projeto</h4>
+										</a>
 									</div>
 								</div>
 							);

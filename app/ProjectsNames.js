@@ -49,7 +49,7 @@ export const ProjectsNames = [
 		url: 'https://tower-of-hanoi-eight.vercel.app',
 		image: 'https://cdn.discordapp.com/attachments/1033477432851836959/1063144115874840607/image.png',
 		github: 'https://github.com/imLymei/tower-of-hanoi',
-		date: 'Janeiro de 2022',
+		date: 'Janeiro de 2023',
 		isHomeScreen: true,
 		description:
 			'Um projeto simples sobre a Torre de Hanoi que utilizei para melhorar minhas habilidades com React.js, hooks, Tailwind CSS e lógica de programação. O objetivo do jogo é passar todos os pinos da pilha A para a pilha C.',
@@ -80,6 +80,18 @@ export const ProjectsNames = [
 			'Uma aplicação feita por curiosidade sobre IAs e Machine Learning. Esse projeto faz parte do material de estudos do FreeCodeCamp, e nele criei uma IA que aprende a dirigir um carro enquanto desvia dos obstáculos.',
 		learning:
 			'Fazendo esse site aprendi como as IAs são estruturadas com Deep Learning e melhores práticas com o Javascript.',
+	},
+	{
+		name: 'deck-shuffler',
+		title: 'Deck Shuffler Score Calculator',
+		tags: ['Next.js', 'Node.js', 'Tailwind CSS'],
+		url: 'https://deck-shuffler.vercel.app/',
+		image: 'https://cdn.discordapp.com/attachments/859640514571927562/1101378520208384020/image.png',
+		github: 'https://github.com/imLymei/deck-shuffler',
+		date: 'Fevereiro de 2023',
+		isHomeScreen: false,
+		description: '',
+		learning: '',
 	},
 	{
 		name: 'todo-app-angular',
