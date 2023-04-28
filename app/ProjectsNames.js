@@ -83,7 +83,7 @@ export const ProjectsNames = [
 	},
 	{
 		name: 'deck-shuffler',
-		title: 'Deck Shuffler Score Calculator',
+		title: 'Pontuador de Baralho Embaralhado',
 		tags: ['Next.js', 'Node.js', 'Tailwind CSS'],
 		url: 'https://deck-shuffler.vercel.app/',
 		image: 'https://cdn.discordapp.com/attachments/859640514571927562/1101378520208384020/image.png',
