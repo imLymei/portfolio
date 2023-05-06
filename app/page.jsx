@@ -173,7 +173,6 @@ export default function Home() {
 					<div className='flex flex-col gap-12'>
 						{ProjectsNames.map((e, index) => {
 							if (e.isHomeScreen) {
-								appsSideDecider++;
 								return (
 									<div key={index}>
 										<div className='max-sm:opacity-0 w-4 h-4 bg-black dark:bg-white rounded-lg flex justify-center items-center absolute right-2 floating-0'>
@@ -186,7 +185,7 @@ export default function Home() {
 											<h3 className=' text-2xl text-center mx-auto'>
 												<span className='text-pink-500'>{e.title}</span>
 											</h3>
-											<h4 className='w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
+											<h4 className='w-[75vw] sm:w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
 										</div>
 										<div className='flex flex-col justify-start items-center'>
 											<div className='hover105'>
