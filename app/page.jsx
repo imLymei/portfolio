@@ -23,7 +23,6 @@ import { ProjectsNames } from './ProjectsNames';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
-	let appsSideDecider = 0;
 
 	return (
 		<div className={darkMode ? 'whiteStar text-white  dark transition-all' : ' blackStar transition-all'}>
@@ -185,7 +184,7 @@ export default function Home() {
 											<h3 className=' text-2xl text-center mx-auto'>
 												<span className='text-pink-500'>{e.title}</span>
 											</h3>
-											<h4 className='w-[75vw] sm:w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
+											<h4 className='w-[75vw] sm:w-[50vw] text-center mx-auto'>{e.description}</h4>
 										</div>
 										<div className='flex flex-col justify-start items-center'>
 											<div className='hover105'>
