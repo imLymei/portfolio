@@ -180,11 +180,11 @@ export default function Home() {
 												<span className='text-pink-500 select-none'>{e.date}</span>
 											</h4>
 										</div>
-										<div className='p-6'>
+										<div className='p-6 flex flex-col justify-center items-center'>
 											<h3 className=' text-2xl text-center mx-auto'>
 												<span className='text-pink-500'>{e.title}</span>
 											</h3>
-											<h4 className='w-[75vw] sm:w-[50vw] text-center mx-auto'>{e.description}</h4>
+											<h4 className='w-[75vw] sm:w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
 										</div>
 										<div className='flex flex-col justify-start items-center'>
 											<div className='hover105'>
