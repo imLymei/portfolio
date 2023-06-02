@@ -23,7 +23,6 @@ import { ProjectsNames } from './ProjectsNames';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
-	let appsSideDecider = 0;
 
 	return (
 		<div className={darkMode ? 'whiteStar text-white  dark transition-all' : ' blackStar transition-all'}>
@@ -173,7 +172,6 @@ export default function Home() {
 					<div className='flex flex-col gap-12'>
 						{ProjectsNames.map((e, index) => {
 							if (e.isHomeScreen) {
-								appsSideDecider++;
 								return (
 									<div key={index}>
 										<div className='max-sm:opacity-0 w-4 h-4 bg-black dark:bg-white rounded-lg flex justify-center items-center absolute right-2 floating-0'>
