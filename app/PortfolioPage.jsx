@@ -65,7 +65,7 @@ export default function PortfolioPage() {
 							.
 						</p>
 					</div>
-					<div className='grid grid-cols-2 md:grid-cols-3 justify-items-center gap-y-8 mb-10'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-8 mb-10'>
 						{ProjectsNames.map((e, index) => {
 							return (
 								<div key={index} className='flex flex-col justify-start items-center'>
