@@ -4,7 +4,7 @@ const nextConfig = {
 		appDir: true,
 	},
 	images: {
-		domains: ['cdn.discordapp.com', 'github.com'],
+		domains: ['cdn.discordapp.com', 'github.com', 'media.discordapp.net'],
 	},
 	webpack: (config, options) => {
 		config.module.rules.push({

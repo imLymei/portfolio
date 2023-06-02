@@ -31,11 +31,11 @@ body {
 }
 
 .skillCard {
-	@apply dark:bg-black/75 bg-white/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm;
+	@apply dark:bg-black/70 bg-white/75 shadow-lg dark:shadow-white/10 p-2 m-auto flex flex-col justify-center items-center min-w-[300px] w-[30vw] max-w-[70vw] min-h-[144px] h-[20vh] border border-black dark:border-white rounded-sm;
 }
 
 .portfolioCard {
-	@apply relative min-w-[144px] min-h-[81px] w-[20vw] aspect-video dark:bg-white bg-black rounded-sm border border-black dark:border-white;
+	@apply relative min-w-[144px] min-h-[81px] w-[70vw] sm:w-[20vw] aspect-video dark:bg-white bg-black rounded-sm border border-black dark:border-white;
 }
 
 .pText {

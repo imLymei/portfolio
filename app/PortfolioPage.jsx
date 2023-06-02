@@ -65,14 +65,14 @@ export default function PortfolioPage() {
 							.
 						</p>
 					</div>
-					<div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-y-8 mb-10'>
+					<div className='grid grid-cols-2 md:grid-cols-3 justify-items-center gap-y-8 mb-10'>
 						{ProjectsNames.map((e, index) => {
 							return (
 								<div key={index} className='flex flex-col justify-start items-center'>
 									<div className='hover105'>
 										<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
 											<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
-												<Image src={e.image} alt='Captur Portfolio' fill={true} sizes='1' />
+												<Image src={e.image} alt={`${e.title} image`} fill={true} sizes='1' />
 											</a>
 										</div>
 									</div>
@@ -82,7 +82,7 @@ export default function PortfolioPage() {
 											return (
 												<h3
 													key={index}
-													className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
+													className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] px-2 flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
 														index % 3 == 0
 															? `sm:col-[1]`
 															: index % 3 == 1

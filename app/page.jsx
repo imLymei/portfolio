@@ -101,7 +101,7 @@ export default function Home() {
 					<div className='grid grid-cols-1 x820:grid-cols-2 sm:p-16 gap-8 sm:gap-4'>
 						<div className='skillCard floating-0 text-2xl'>
 							<h3 className='py-2'>Linguagens</h3>
-							<div className='md:text-5xl flex justify-center gap-[6%]'>
+							<div className='md:text-3xl lg:text-4xl xl:text-5xl flex justify-center gap-[6%]'>
 								<a
 									href='https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
 									target='_blank'
@@ -130,7 +130,7 @@ export default function Home() {
 						</div>
 						<div className='skillCard floating-1 text-2xl'>
 							<h3 className='py-2'>Outros</h3>
-							<div className='md:text-5xl flex justify-center gap-[3%]'>
+							<div className='md:text-3xl lg:text-4xl xl:text-5xl flex justify-center gap-[3%]'>
 								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
 									<SiReact className='hover110' />
 								</a>
@@ -162,7 +162,7 @@ export default function Home() {
 						<span className='link select-none'>Inglês</span> por{' '}
 						<span className='text-pink-500 select-none'>convenção</span>.
 					</h3>
-					<div className='max-sm:opacity-0 w-[5px] sm:h-[3500px] md:h-[3600px] absolute rounded-sm right-2 border border-black dark:border-white floating-3'>
+					<div className='max-sm:opacity-0 w-[5px] sm:h-[4800px] md:h-[4600px] lg:h-[4500px] xl:h-[4600px] absolute rounded-sm right-2 border border-black dark:border-white floating-3'>
 						<div className='absolute bottom-0 translate-y-[120%] -translate-x-1/3 flex flex-col gap-4'>
 							<div className='max-sm:opacity-0 w-[5px] h-8 opacity-75 relative rounded-sm border border-black dark:border-white floating-2'></div>
 							<div className='max-sm:opacity-0 w-[5px] h-4 opacity-50 relative rounded-sm border border-black dark:border-white floating-1'></div>
@@ -183,16 +183,16 @@ export default function Home() {
 											</h4>
 										</div>
 										<div className='p-6'>
-											<h3 className=' text-2xl text-center mx-auto'>
+											<h3 className=' text-2xl mx-auto'>
 												<span className='text-pink-500'>{e.title}</span>
 											</h3>
-											<h4 className='w-[50vw] text-center mx-auto p-4'>{e.description}</h4>
+											<h4 className='sm:w-[50vw] sm:text-left mx-auto py-4 sm:px-4'>{e.description}</h4>
 										</div>
 										<div className='flex flex-col justify-start items-center'>
 											<div className='hover105'>
 												<div className={`portfolioCard floating-${Math.round((Math.random() * 10) % 3)}`}>
 													<a className='cursor-pointer' href={`/portfolio/${e.name}`}>
-														<Image src={e.image} alt={e.title} fill={true} sizes='1' />
+														<Image src={e.image} alt={e.title} fill={true} />
 													</a>
 												</div>
 											</div>
@@ -202,7 +202,7 @@ export default function Home() {
 													return (
 														<h3
 															key={index}
-															className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
+															className={`cursor-default select-none border dark:border-white dark:bg-black/75 bg-white/75 border-black w-[max(6vw,100%)] px-2 flex justify-center items-center rounded-sm text-[max(0.75vw,10px)] ${
 																index % 3 == 0
 																	? `sm:col-[1]`
 																	: index % 3 == 1
@@ -216,7 +216,7 @@ export default function Home() {
 													);
 												})}
 											</div>
-											<h4 className='p-6 lg:w-[50vw] text-center mx-auto text-sm link'>
+											<h4 className='p-6 sm:w-[50vw] text-center mx-auto text-sm link'>
 												<span className='link'>{e.learning}</span>
 											</h4>
 											<div className='floating-0 pt-4'>

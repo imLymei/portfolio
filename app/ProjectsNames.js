@@ -96,7 +96,7 @@ export const ProjectsNames = [
 	{
 		name: 'todo-app-angular',
 		title: 'Todo-App com API e Banco de Dados',
-		tags: ['Angular', 'Javascript', 'Express.js', 'MongoDb'],
+		tags: ['Angular', 'Javascript', 'Express.js', 'Node.js', 'MongoDB'],
 		url: 'https://todo-app-imlymei.vercel.app',
 		image: 'https://cdn.discordapp.com/attachments/859640514571927562/1099433697310158940/image.png',
 		github: 'https://github.com/imLymei/TodoApp',
@@ -105,6 +105,35 @@ export const ProjectsNames = [
 		description:
 			'Meu primeiro projeto feito com Angular no Frontend, API feita com Express.js e integração com um Banco de Dados NoSQL(MongoDB) como Projeto Acadêmico, e com essas tecnologias fiz um simples Todo App.',
 		learning:
-			'Nesse projeto aprendi como os sites feitos em Angular sao feitos, como criar e hospedar uma API feita com Express.js e conectar todo o projeto com o Banco de Dados do MongoDb.',
+			'Nesse projeto aprendi como os sites feitos em Angular sao feitos, como criar e hospedar uma API feita com Express.js e conectar todo o projeto com o Banco de Dados do MongoDB.',
+	},
+	{
+		name: 'korjata',
+		title: 'Projeto IHM: Korjata',
+		tags: ['Next.js', 'Next Auth', 'Node.js', 'Tailwind CSS', 'MongoDB', 'Não Finalizado'],
+		url: 'https://korjata.vercel.app',
+		image:
+			'https://cdn.discordapp.com/attachments/859640514571927562/1114187987257921646/opengraph-image.png',
+		github: 'https://github.com/imLymei/korjata',
+		date: 'Maio de 2023',
+		isHomeScreen: true,
+		description: 'Um dos meus primeiros projetos feitos com autenticação OAuth e com CRUD no MongoDB.',
+		learning:
+			'Nesse projeto aprendi sobre diferentes métodos de login e autenticação, além de planejar um banco dados básico por completo',
+	},
+	{
+		name: 'desafios-rdo',
+		title: 'Desafios para desenvolvedores Front End',
+		tags: ['Next.js', 'Typescript', 'Node.js', 'Tailwind CSS'],
+		url: 'https://desafios-rdo.vercel.app',
+		image:
+			'https://media.discordapp.net/attachments/1033477432851836959/1114185668529238086/image.png?width=1349&height=681',
+		github: 'https://github.com/imLymei/desafios-rdo',
+		date: 'Junho de 2023',
+		isHomeScreen: true,
+		description:
+			'Um projeto focado no meu desenvolvimento como desenvolvedor web, também foi uma das minhas primeiras experiencias com Typescript. O site contem 3 desafios: Conversor de Números Romanos, Jogo da Vida de Conway e Divisor de Conta de Restaurante.',
+		learning:
+			'Nesse projeto entendi como utilizar Typescript e suas vantagens, além de praticar minha lógica de programação e UI/UX.',
 	},
 ];
