@@ -54,7 +54,7 @@ export default function Home() {
 										Resume
 									</a>
 								</div>
-								{/* Updated 22/04/2023 */}
+								{/* Updated 06/06/2023 */}
 							</li>
 						</ul>
 					</nav>
