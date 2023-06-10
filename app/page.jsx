@@ -161,7 +161,7 @@ export default function Home() {
 						<span className='link select-none'>Inglês</span> por{' '}
 						<span className='text-pink-500 select-none'>convenção</span>.
 					</h3>
-					<div className='max-sm:opacity-0 w-[5px] sm:h-[4800px] md:h-[4600px] lg:h-[4500px] xl:h-[4600px] absolute rounded-sm right-2 border border-black dark:border-white floating-3'>
+					<div className='max-sm:opacity-0 w-[5px] sm:h-[5400px] md:h-[5400px] lg:h-[5300px] xl:h-[5500px] absolute rounded-sm right-2 border border-black dark:border-white floating-3'>
 						<div className='absolute bottom-0 translate-y-[120%] -translate-x-1/3 flex flex-col gap-4'>
 							<div className='max-sm:opacity-0 w-[5px] h-8 opacity-75 relative rounded-sm border border-black dark:border-white floating-2'></div>
 							<div className='max-sm:opacity-0 w-[5px] h-4 opacity-50 relative rounded-sm border border-black dark:border-white floating-1'></div>

@@ -110,7 +110,7 @@ export const ProjectsNames = [
 	{
 		name: 'korjata',
 		title: 'Projeto IHM: Korjata',
-		tags: ['Next.js', 'Next Auth', 'Node.js', 'Tailwind CSS', 'MongoDB', 'Não Finalizado'],
+		tags: ['Next.js', 'Next Auth', 'Node.js', 'Tailwind CSS', 'MongoDB'],
 		url: 'https://korjata.vercel.app',
 		image:
 			'https://cdn.discordapp.com/attachments/859640514571927562/1114187987257921646/opengraph-image.png',
@@ -135,5 +135,19 @@ export const ProjectsNames = [
 			'Um projeto focado no meu desenvolvimento como desenvolvedor web, também foi uma das minhas primeiras experiencias com Typescript. O site contem 3 desafios: Conversor de Números Romanos, Jogo da Vida de Conway e Divisor de Conta de Restaurante.',
 		learning:
 			'Nesse projeto entendi como utilizar Typescript e suas vantagens, além de praticar minha lógica de programação e UI/UX.',
+	},
+	{
+		name: 'advanzzze',
+		title: 'Site da Advanzzze Lab',
+		tags: ['Next.js', 'Typescript', 'Node.js', 'Tailwind CSS', 'Em Produção'],
+		url: 'https://www.advanzzze.com',
+		image: 'https://cdn.discordapp.com/attachments/1033477432851836959/1116931526173655090/image.png',
+		github: 'https://github.com/Advanzzzze/advanzzze',
+		date: '',
+		isHomeScreen: true,
+		description:
+			'A home page da Avanzzze, minha marca especializada em Desenvolvimento Web e de Aplicativos freelance, apresenta projetos diversificados desenvolvidos com maestria, utilizando minhas linguagens e frameworks de favoritas.',
+		learning:
+			'Neste projeto, integro um design moderno e sofisticado, aplicando meu conhecimento em Typescript e aprimorando minhas habilidades em design e CSS.',
 	},
 ];
