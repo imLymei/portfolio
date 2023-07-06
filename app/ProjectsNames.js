@@ -146,7 +146,7 @@ export const ProjectsNames = [
 		date: '',
 		isHomeScreen: true,
 		description:
-			'A home page da Avanzzze, minha marca especializada em Desenvolvimento Web e de Aplicativos freelance, apresenta projetos diversificados desenvolvidos com maestria, utilizando minhas linguagens e frameworks de favoritas.',
+			'A home page da Avanzzze, minha marca especializada em Desenvolvimento Web e de Aplicativos freelance, apresenta projetos diversificados desenvolvidos com maestria, utilizando minhas linguagens e frameworks favoritas.',
 		learning:
 			'Neste projeto, integro um design moderno e sofisticado, aplicando meu conhecimento em Typescript e aprimorando minhas habilidades em design e CSS.',
 	},
