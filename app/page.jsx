@@ -255,9 +255,9 @@ export default function Home() {
 				</section>
 			</main>
 			<footer className='p-8 px-[10vw] x820:px-[25vw] text-center border-t dark:bg-black bg-white border-black dark:border-white grid grid-cols-2'>
-				<h2 className='text-sm dark:text-white'>Felipe Cardoso©2022</h2>
+				<h2 className='text-sm dark:text-white'>Felipe Cardoso©2024</h2>
 				<h2 className='text-sm dark:text-white'>
-					Powered by <a href=''>Next.js</a>
+					Powered by <a href='https://nextjs.org'>Next.js</a>
 				</h2>
 			</footer>
 		</div>
